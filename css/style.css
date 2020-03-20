@@ -2,7 +2,33 @@ body{
 font-family: 'Noto Sans', sans-serif;    
 }
 
-.alert-container {}
+.container-wrapper {
+    
+}
+
+.container-wrapper-green {
+    background-color: green;
+    color: white;
+}
+
+.container-wrapper-pale {
+    background-color:#e6f1e6;
+}
+
+
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #f5a33d;
+    border-color:#f5a33d;
+    color: #5d5d5d
+}
 
 .callout-container {
     height: 100vh;
@@ -26,12 +52,28 @@ font-family: 'Noto Sans', sans-serif;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0,.6);
+    background-color: rgba(0,0,0,0.5);
 }
 
 .quotes-container {}
 
 .features-container {}
+
+/*Page Headers*/
+
+.page-header {
+ margin-bottom: 0;
+ border-bottom: 0;
+ text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+.quotes .page-header {
+    margin-bottom: 25px;
+}
 
 /*Block Dividers*/
 
@@ -39,17 +81,57 @@ font-family: 'Noto Sans', sans-serif;
     width: 150px;
     height: 7px;
     border: 0;
-    background-color: #126124;
+    border-radius: 3px;
 }
 
-.block-divider-green {
-     color: #126124; 
+.block-divider--green {
+     background-color: #126124; 
 }
 
-.block-divider-short {
+.block-divider--white {
+    background-color: white;
+}
+
+.block-divider--short {
     width: 75px;
 }
-    
+
+/*Content Containers*/
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+ /*Navbar*/
+
+ .navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+ }  
+
+ .navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.25); 
+ } 
+
+ .navbar .navbar-toggler {
+     border: 0;
+ }
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
 
 /*Jumbotron*/
 
@@ -66,11 +148,12 @@ font-family: 'Noto Sans', sans-serif;
 .jumbotron .lead {
     color: #adb5bd;
 }
+   
 
 .jumbotron small {
-    font-size: 60%
+    font-size: 60%;
     font-style: italic;
-    color: red;
+    color: #e8ece9;
 }
 
 /*Buttons*/
@@ -81,16 +164,62 @@ font-family: 'Noto Sans', sans-serif;
     width: 160px;
 }
 
-.btn--red {
+.btn--green {
     color: white;
-    background-color: #f05f40;
-    border-color: #f05f40;
+    background-color:#018C0D;
+    border-color: #0fa831;
 }
 
-.btn--red:hover,
-.btn--red:active,
-.btn--red:focus,
-.btn--red:active:focus {
-    background-color: #f05f40;
-    border-color: #f05f40;
+.btn--green:hover,
+.btn--green:active,
+.btn--green:focus,
+.btn--green:active:focus {
+    background-color: #0e6823;
+    border-color:#126124;
 }
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 23px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: green;
+}
+
+.badge--orange {
+    background-color: #e34f08;
+}
+
+.text-uppercase {
+    font-weight: bold;
+}
+
+.center {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-left: 35px;
+}
+
+th td {
+    border-bottom: 1px solid green;
+}
+
+th {
+    background-color: green;
+    color: white;
+}
+

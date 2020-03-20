@@ -12,8 +12,19 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 <body>
-   <nav class="navbar navbar-light bg-light navbar-expand-sm">
+<div class="container-fluid navalert-container">
+   <div class="container-fluid alert-container">
+        <div class="row d-none d-sm-block">
+          <div class="col-12">
+             <div class="site-wide-alert alert alert-warning">
+                <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6! <a href="">See here for details!</a>
+             </div>
+          </div>
+        </div>
+   </div>
+   <nav class="navbar navbar-dark navbar-expand-sm">
        <a href="/" class="navbar-brand">Whiskey Drop</a>
+       
        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span></button>
 
@@ -35,19 +46,11 @@
        </div>
        <div class="d-none d-md-block">
          <p class="navbar-text my-auto mr-2"><em>Great whiskey delivered to your door!</em></p>
-         <a href="/login">Sign In / Sign Up</a>
+         <a href="/login" class="btn btn--cta btn--green">Sign In / Sign Up</a>
        </div>
    </nav>
-   <!--
-   <article class="container alert-container">
-        <div class="row d-none d-sm-block">
-          <div class="col-12">
-             <div class="alert alert-warning">
-             <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6! <a href="">See here for details!</a>
-             </div>
-          </div>
-        </div>
-        -->
+</div>
+  
     <!--Callout-->
   <div class="container-fluid callout-container">
   <div class="opaque-overlay">  </div>   
@@ -55,12 +58,12 @@
     <div class="col-12">
       <section class="callout jumbotron text-center">
           <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
-          <hr class="block-divider block-divider-green">
+          <hr class="block-divider block-divider--green">
           <p class="lead">Sign up today to start receiving the world's best whiskey every month. 
           <s class="d-none d-sm-inline">€19.99</s> 
           <span class="d-inline d-sm-none"><br></span>
           <strong><mark>First one is free!</mark></strong></p>
-          <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
+          <button class="btn btn-lg btn--cta btn--green" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
           <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink responsibly</small></p>
      </section>
     </div>
@@ -69,11 +72,13 @@
     <!--/.callout-->
     
     <!--Quotes-->
-    <div class="container quotes-container">
+    <div class="container-wrapper container-wrapper-pale">
+    <div class="container quotes-container content-container">
       <section class="quotes">
         <div class="row">
-          <div class="col-12 my-5">
-           <h2 class="text-uppercase">Quotes:</h2>
+          <div class="col-12 page-header">
+           <h2 class="text-uppercase">Quotes</h2>
+           <hr class="block-divider block-divider--short block-divider--green">
           </div>
          </div>
          <div class="row">
@@ -106,21 +111,23 @@
          </div>
       </section> 
       </div>
+    </div>
     <!--/.quotes-->
-    <hr>
 
     <!--Features-->
-    <div class="container features-container">
+    <div class="container-wrapper container-wrapper-green">
+    <div class="container features-container content-container">
       <section class="features">
       <div class="row">
-         <div class="col-12 my-5">
-            <h2 class="text-uppercase">Features:</h2>
+         <div class="col-12 page-header">
+            <h2 class="text-uppercase">Features</h2>
+            <hr class="block-divider block-divider--short block-divider--white">
          </div>
       </div>
       <div class="row">
          <div class="col-12 col-md-6 col-lg-4">
            <div class="feature">
-			<h3><i class="fa fa-gift d-none d-sm-block"></i> Feature 1 <span class="badge badge-success">NEW!</span></h3>
+			<h3><i class="fa fa-gift d-none d-sm-block"></i> Feature 1 <span class="badge badge--orange">NEW!</span></h3>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac venenatis lorem. Nulla sagittis non ipsum quis tempus.</p>
              <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
            </div>
@@ -142,20 +149,22 @@
       </div>
     </section>
     </div>
-  
-    <div class="container table-container">
+</div>
+
+<!--Table-->
+  <div class="container-wrapper container-wrapper-pale">
+    <div class="container table-container content-container">
       <section class="table">
         <div class="row">
-         <div class="col-12">
+         <div class="col-12 page-header">
          <h2 class="text-uppercase">Monthly Favourites</h2>
+         <hr class="block-divider block-divider--short block-divider--green">
          </div>
         </div>
-          <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Origin</th>
-    </tr>
+<table class="table table-hover center">
+   <thead class="col-6">
+      <th class="text-uppercase" scope="col">Name</th>
+      <th class="text-uppercase" scope="col">Origin</th>
   </thead>
   <tbody>
     <tr>
@@ -182,7 +191,8 @@
   </table>  
  </section>
  </div>
-</article> 
+</div>
+
 <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -213,8 +223,10 @@
     </div>
   </div>
 </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
+
 </body>
 </html>
