@@ -1,5 +1,5 @@
 body{
-font-family: 'Noto Sans', sans-serif;    
+font-family: 'Oswald', sans-serifs;    
 }
 
 .container-wrapper {
@@ -143,6 +143,7 @@ font-family: 'Noto Sans', sans-serif;
     color: white;
     font-weight: bold;
     margin-bottom: 30px;
+    letter-spacing: 2px;
 }
 
 .jumbotron .lead {
