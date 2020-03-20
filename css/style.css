@@ -168,7 +168,7 @@ font-family: 'Oswald', sans-serifs;
 .btn--green {
     color: white;
     background-color:#018C0D;
-    border-color: #0fa831;
+    border-color: #018C0D
 }
 
 .btn--green:hover,
@@ -176,7 +176,7 @@ font-family: 'Oswald', sans-serifs;
 .btn--green:focus,
 .btn--green:active:focus {
     background-color: #0e6823;
-    border-color:#126124;
+    border-color:#0e6823;
 }
 
 .feature {
