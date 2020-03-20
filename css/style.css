@@ -179,18 +179,18 @@ font-family: 'Oswald', sans-serifs;
     border-color:#0e6823;
 }
 
-.feature {
+.features {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.feature i {
+.features i {
     margin-bottom: 20px;
     font-size: 45px;
     line-height: 45px;
 }
 
-.feature .btn {
+.btn--white {
     background-color: white;
     border-color: white;
     border-radius: 23px;
@@ -200,6 +200,11 @@ font-family: 'Oswald', sans-serifs;
     color: green;
 }
 
+.btn--white:hover {
+    background-color: #e34f08;
+    border-color: #e34f08;
+}
+   
 .badge--orange {
     background-color: #e34f08;
 }
